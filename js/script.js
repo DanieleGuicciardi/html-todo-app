@@ -6,7 +6,8 @@ form.addEventListener("submit", function(event) {
     event.preventDefault();
 
     const newList = document.createElement("li");   //new list is created
-    newList.textContent = taskElement.value;    
+    newList.textContent = taskElement.value;
+    newList.classList.add("elemento");    
     todoList.appendChild(newList);
 
     const deleteButton = document.createElement("button");  //delete button

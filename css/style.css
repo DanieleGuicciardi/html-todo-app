@@ -1,5 +1,5 @@
 html{
-    background-color: violet;
+    background-color: blue;
     text-align: center;
     height: 100%;
     margin: 0;
@@ -18,11 +18,11 @@ html{
 }
 
 #task {
-    width: 85%;                /* Larghezza dell'input quasi piena rispetto al form */
-    padding: 10px;             /* Spazio interno per renderlo più grande */
-    font-size: 1.2em;          /* Font più grande */
-    margin-bottom: 10px;       /* Spazio sotto l'input */
-    border-radius: 5px;        /* Bordo arrotondato */
+    width: 85%;        
+    padding: 10px;          
+    font-size: 1.2em;          
+    margin-bottom: 10px;       
+    border-radius: 5px;        
     border: 1px solid #ccc; 
 }
 
@@ -42,19 +42,20 @@ html{
 }
 
 #todoList li{
-    text-align: justify;
-    text-
     background-color: rgba(87, 207, 255, 0.493);
     padding: 5px;
     margin: 20px 0;
     font-size: 1.5em; 
     border-radius: 5px;
     border: 1px solid #ddd;
-    align-items: center;
+}
+
+.elemento {
+    text-align: left;
 }
 
 .deleteButton{
-    
+    margin-left: 40em;
     background-color: red;
     padding: 1.2em;
     border: 0px;
