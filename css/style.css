@@ -1,10 +1,11 @@
-html{
+body{
     background-color: blue;
     text-align: center;
     height: 100%;
     margin: 0;
     padding: 0;
     width: 100%;
+    display: inline-block;
 }
 
 #typeTask {
@@ -12,7 +13,7 @@ html{
     max-width: 700px;               
     margin: 0 auto;         
     padding: 20px;            
-   
+    position: relative;
     border-radius: 10px;       
     background-color: #f9f9f9; 
 }
@@ -41,24 +42,24 @@ html{
     padding-left: 0;
 }
 
-#todoList li{
+#todoList li {
     background-color: rgba(87, 207, 255, 0.493);
-    padding: 5px;
+    padding: 15px;
     margin: 20px 0;
     font-size: 1.5em; 
     border-radius: 5px;
     border: 1px solid #ddd;
+    overflow: hidden;
+
 }
 
-.elemento {
-    text-align: left;
-}
-
-.deleteButton{
-    margin-left: 40em;
+.deleteButton {
+    float: right; 
     background-color: red;
-    padding: 1.2em;
-    border: 0px;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
     border-radius: 5px;
 }
 
