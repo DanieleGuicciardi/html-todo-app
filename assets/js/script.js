@@ -5,22 +5,28 @@ const todoList = document.getElementById("todoList");
 form.addEventListener("submit", function(event) {
     event.preventDefault();
 
-    const newList = document.createElement("li");   //new list is created
-    newList.textContent = taskElement.value;
-    newList.classList.add("elemento");    
+    const newList = document.createElement("li");  //new list is created
+    newList.classList.add("elemento");
+
+    const taskContent = document.createElement("span");
+    taskContent.textContent = taskElement.value;
+    taskContent.classList.add("task");
+    newList.appendChild(taskContent);
+    
     todoList.appendChild(newList);
 
     const deleteButton = document.createElement("button");  //delete button
-    deleteButton.textContent = "🗑️";
-    deleteButton.classList.add("deleteButton")
+    deleteButton.textContent = "X";
+    deleteButton.classList.add("deleteButton");
     newList.appendChild(deleteButton);
     deleteButton.addEventListener("click", function(){
         todoList.removeChild(newList);
     });
-
-    newList.addEventListener("click", function() {
-        newList.classList.toggle("completed");
-    });
+    
+    const checkBtn = document.createElement("input");   //checkbox
+    checkBtn.type = "checkbox";
+    checkBtn.classList.add("checkBtn");
+    newList.appendChild(checkBtn);
 
     taskElement.value = "";  //svuoto il form
 });

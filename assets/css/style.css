@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 body{
-    background-color: blue;
+    background: linear-gradient(to right, #08278d, #8da6f5);
     text-align: center;
     height: 100%;
     margin: 0;
@@ -8,14 +13,23 @@ body{
     display: inline-block;
 }
 
+h1{
+    display: flex;
+    justify-content: start;
+    font-size: 1.8em;
+    padding: 20px;
+    padding-bottom: 0;
+    padding-left: 10px;
+}
+
 #typeTask {
     width: 80%; 
     max-width: 700px;               
-    margin: 0 auto;         
-    padding: 20px;            
+    margin: 0 auto;                     
     position: relative;
     border-radius: 10px;       
     background-color: #f9f9f9; 
+    margin-top: 3%;
 }
 
 #task {
@@ -43,26 +57,61 @@ body{
 }
 
 #todoList li {
-    background-color: rgba(87, 207, 255, 0.493);
+    background: linear-gradient(to right, #6781d4, #7d96e7);;
     padding: 15px;
     margin: 20px 0;
     font-size: 1.5em; 
     border-radius: 5px;
     border: 1px solid #ddd;
     overflow: hidden;
-
+    
 }
 
 .deleteButton {
     float: right; 
     background-color: red;
     border: none;
-    padding: 10px;
+    padding: 15px;
     color: white;
     cursor: pointer;
     border-radius: 5px;
 }
 
+.checkBtn{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    font-size: 24px;
+    background-color: #f0f0f0;
+    margin-right: 10px; 
+    order: 1;                     
+}
+
 .completed {
     text-decoration: line-through;
 }
+
+.elemento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;          
+    margin-bottom: 10px;
+  }
+    
+  .task {
+    order: 2;
+    flex-grow: 1;                   
+    text-align: center;             
+  }
+  
+  .deleteButton {
+    order: 3;                        
+    margin-left: 10px;               
+  }
+  
+
